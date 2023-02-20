@@ -1,6 +1,7 @@
 body {
     font-family: 'Nunito Sans', sans-serif;
     text-align: center;
+    font-size: 18px;
     background-color: #FFE4C4;
 }
 
@@ -41,4 +42,5 @@ button:hover {
 .article {
     border-radius: 50px;
     border: solid #09308e;
+    margin: 10px;
 }

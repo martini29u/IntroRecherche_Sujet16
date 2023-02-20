@@ -11,8 +11,8 @@ fetch(RSS)
         items.forEach(elem => {
             console.log(elem.querySelector('enclosure').attributes['url'].textContent);
             html += `
-                <div id="article${i}" style="border: solid black;">
-                    <h3 id="titre_article${i}">${elem.querySelector('title').innerHTML}</h3>
+                <div id="article${i}" class="article">
+                    <h2 id="titre_article${i}">${elem.querySelector('title').innerHTML}</h2>
                     <img src="${elem.querySelector('enclosure').attributes['url'].textContent}">
                     <p>${elem.querySelector('description').textContent}</p>
                     <button id="supp_article1" onclick="supprimerArticle()">Supprimer</button>
