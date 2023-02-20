@@ -9,16 +9,27 @@ fetch(RSS)
         const items = data.querySelectorAll('item');
         let i = 1;
         items.forEach(elem => {
-            console.log(elem.querySelector('enclosure').attributes['url'].textContent);
-            html += `
+            link = elem.querySelector('link').textContent
+            console.log(link);
+            html = `
                 <div id="article${i}" class="article">
                     <h2 id="titre_article${i}">${elem.querySelector('title').innerHTML}</h2>
-                    <img src="${elem.querySelector('enclosure').attributes['url'].textContent}">
-                    <p>${elem.querySelector('description').textContent}</p>
-                    <button id="supp_article1" onclick="supprimerArticle()">Supprimer</button>
-                    <button id="access_article1" onclick="ouvrirLien()">Visionner</button>
+                    <div class="separateur"></div>
+                    <div class="container flex-container">
+                    <div><img src="${elem.querySelector('enclosure').attributes['url'].textContent}"></div>
+                    <div><p>${elem.querySelector('description').textContent}</p></div></div>
+                    <div class="separateur"></div>
+                    <button id="supp_article${i}" onclick="supprimerArticle()">Supprimer</button>
+                    <button id="access_article${i}">Visionner</button>
                 </div>`;
+            document.body.innerHTML += html;
+            //document.getElementById("access_article" + i).addEventListener("click", function() {alert("Tu as cliqué")});
+            //document.getElementById("access_article" + i).onclick = function() {ouvrirLien(link)};
             i++;
         });
-        document.body.innerHTML = html;
     })
+
+    function ouvrirLien(link) {
+        console.log("Tu as cliqué");
+        //open(link);
+    }

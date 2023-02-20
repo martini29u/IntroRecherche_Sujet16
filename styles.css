@@ -39,8 +39,34 @@ button:hover {
     color: #FFE4C4;
 }
 
+img {
+    margin-right: 50px;
+}
+
 .article {
     border-radius: 50px;
     border: solid #09308e;
     margin: 10px;
+}
+
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+    text-align: center;
+}
+
+.flex-container {
+	display: flex;
+	text-align: justify;
+    align-items: center;
+}
+
+.separateur {
+	height: 3px;
+	background-color: #dd4a43;
+	width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+	margin-bottom: 20px;
+    text-align: center;
 }
