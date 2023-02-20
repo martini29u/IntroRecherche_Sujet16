@@ -1,0 +1,44 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    background-color: #FFE4C4;
+}
+
+h1 {
+	margin-bottom: 20px;
+	color: #09308e;
+	font-weight: 700;
+	font-size: 50px;
+}
+
+h2 {
+	margin-bottom: 20px;
+	color: #09308e;
+	font-weight: 600;
+	font-size: 32px;
+}
+
+button {
+	background-color: #FFE4C4;
+	border: 2px solid #09308e;
+	border-radius: 12px;
+	padding: 14px 30px;
+	margin: 25px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 125;
+	font-size: 18px;
+    color: #09308e;
+}
+
+button:hover {
+	border: 2px solid #FFE4C4;
+	background-color: #09308e;
+    border: 2px solid #09308e;
+    color: #FFE4C4;
+}
+
+.article {
+    border-radius: 50px;
+    border: solid #09308e;
+}
