@@ -35,6 +35,7 @@ fetch(RSS)
     }
 
     function supprimerArticle(i) {
-        console.log(i);
+        const element = document.getElementById("article" + i);
+        element.remove();
     }
 
